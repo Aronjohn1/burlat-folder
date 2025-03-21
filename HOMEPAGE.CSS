@@ -9,7 +9,7 @@
   
   
     margin: 20px auto 0;
-   height: 2800 px;
+   height: auto;
    width: 90%;
    
    background-color: whitesmoke;
@@ -103,7 +103,7 @@ p{
 button{
     padding: 0.7rem 1rem;
     border: 1px solid rgb(13, 154, 13);
-    margin-right: 10px;
+    margin-right: 5px;
     color: green;
     background-color: white;    
     transition: 0.5s ease-in-out;
@@ -179,10 +179,10 @@ p{
     
 
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(300px);
-    padding: 10px;
+    grid-auto-rows: minmax(200px, auto); 
+    padding: 100px;
     gap: 30px;
-   
+  
 
  
 
@@ -191,7 +191,6 @@ p{
 
  .sp-burs{
 
-    
 } 
 .lbox{
   width: 100%;
@@ -201,19 +200,14 @@ p{
 }
 
  .d-desc{
-
-
+  
+text-align: justify;
 } 
-.d-box{
-
-border: 1px solid black;
-text-align: center;
-
-
-
+.d-box {
+    min-height: auto; 
 }
 .yow{
-    padding: 60px;
+
   
 }
 
@@ -223,50 +217,33 @@ text-align: center;
 
 @media (max-width: 1024px) {
     .selection-three{
-        
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(100px);
+        grid-template-columns: repeat(2, 1fr);
     }
+    .sp-burs{
+        padding: 6rem;
+        
+    } 
+    .selection-four{
+        grid-template-columns: repeat(1,1fr);
+  
+       padding: 50px;
+}
 
-    .d-box{
-   
-     border: 1px solid black;
-      height: 400px;
-        }
-        .selection-four{
-       
-            display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                grid-auto-rows: minmax(300px);
-                
-               
-            
-             
-            
-            
-            }
 }
 
 @media (max-width: 500px) {
     .selection-three{
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(100px);
     }
-    .selection-four{
-       
-    display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(300px);
-        
-       
-    
-     
-    
-    
-    }
- 
-       
-        
-        
-    
+  .selection-four{
+    grid-template-columns: repeat(1,1fr);
+
+   padding: 50px;
+   text-align: justify;
+   text-align: center;
+
+  }
+
+
+
 }
