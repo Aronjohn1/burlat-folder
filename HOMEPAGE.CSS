@@ -181,6 +181,7 @@ p{
     display: flex;
    gap: 20px;
    padding: 20px;
+   
 }
 .d-box{
  
@@ -192,6 +193,9 @@ p{
 }
 .sp-burs{
     padding: 10px;
+}
+.flex{
+
 }
 
 @media (max-width: 1024px) {
@@ -215,27 +219,22 @@ p{
    .selection-two{
     padding: 20px;
    }
-   .selection-four{
+   .flex{
     width: 100%;
     display: flex;
+    flex-direction: column;
    gap: 20px;
    padding: 20px;
+   justify-content: center;
+   align-items: center;
 }
 .d-box{
  
-    width: 50%;
-}
-.lbox{
-    height: 100%;
-    width: 100%;
-}
-.sp-burs{
-    padding: 10px;
+    width: 90%;
 }
 }
 
-
-@media (max-width: 500px) {
+@media screen and  (max-width: 500px) {
     .selection-three{
        padding: 20px;
         grid-template-columns: repeat(1, 1fr);
@@ -259,7 +258,7 @@ grid-auto-rows: minmax(200px);
     .selection-four{
         width: 100%;
         display: flex;
-        flex-direction: column;
+     flex-direction: column;
        gap: 20px;
        padding: 50px;
     }
