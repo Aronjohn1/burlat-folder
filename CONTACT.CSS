@@ -275,7 +275,7 @@ iframe {
     width: 800px;
     height: 500px;
     margin: auto;
-    padding: 10px;
+    padding: 60px;
  
 }
 .faq-item {
@@ -329,7 +329,7 @@ button{
 
 
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .faq-item {
    width: 300px;
     }
@@ -344,4 +344,26 @@ button{
       
     }
 
+}  */
+
+@media (max-width: 500px) {
+    .faq-item {
+   width: 300px;
+  
+    }
+   
+    .info-item {
+        justify-content: center;
+    }
+  
+    iframe {
+        width: 300px;
+      
+      
+    }
+    .selection-four{
+        padding: 60px;
+    }
+
 } 
+
