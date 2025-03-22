@@ -199,7 +199,7 @@ p{
 .selection-ONE{
   
   
-   height: 3800px;
+  height: 4000px;
 
    
 
@@ -226,7 +226,7 @@ p{
 @media screen and  (max-width: 500px) {
     .selection-three{
  
- width: 400px;
+
         grid-template-columns: 1fr
 
     }
