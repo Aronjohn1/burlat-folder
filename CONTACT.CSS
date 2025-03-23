@@ -342,6 +342,8 @@ summary{
     .selection-four{
         padding: 10px;
     }
-
+details{
+    width: 100%;
+}
 } 
 
